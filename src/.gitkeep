@@ -1,0 +1,8 @@
+# src/ -- Reusable ETL and validation logic.
+
+# Engineering principle: the DAG describes ORCHESTRATION. Reusable ETL and
+# validation logic belongs here (outside the DAG file) when it is appropriate.
+#
+# Part 2 of the activity will place the real Great Expectations validation and
+# the ETL transformation steps in this folder, keeping the DAG responsible only
+# for when and in what order those operations run.

@@ -1,0 +1,15 @@
+# Local DAG-authoring dependencies (VS Code / static analysis only).
+#
+# Apache Airflow itself executes inside Docker Compose. This file exists only so
+# that the local virtual environment can import `pendulum` and the `airflow.sdk`
+# namespace for editor support.
+#
+# IMPORTANT: install with the Airflow 3.1.8 constraints file, otherwise pip
+# resolves an incompatible SQLAlchemy and `from airflow.sdk import dag, task`
+# fails with a misleading ImportError. See README.md section 4.
+#
+#   source .venv/bin/activate
+#   python -m pip install -r requirements-dev.txt \
+#     --constraint https://raw.githubusercontent.com/apache/airflow/constraints-3.1.8/constraints-3.12.txt
+
+apache-airflow-task-sdk==1.1.8

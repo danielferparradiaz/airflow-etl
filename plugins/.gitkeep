@@ -1,0 +1,3 @@
+# This folder is mounted into the Airflow containers as /opt/airflow/plugins
+# by docker-compose.yaml. Airflow plugins are optional; this activity does
+# not create any custom plugin.

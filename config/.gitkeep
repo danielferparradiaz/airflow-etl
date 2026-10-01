@@ -1,0 +1,5 @@
+# This folder is mounted into the Airflow containers as /opt/airflow/config
+# by docker-compose.yaml. It is empty by default: the official quick-start
+# uses environment variables from .env instead of an airflow.cfg file.
+#
+# Place a custom airflow.cfg here only if a local configuration override is needed.
